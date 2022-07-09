@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <script src="https://unpkg.com/phosphor-icons"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="manifest" href="assets/site.webmanifest">
+  <title>Forms</title>
+</head>
+
+<body>
+
+  <div class="destaques">
+    <div class="slides">
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+
+      <div class="slide first">
+        <img src="/assets/image 1.webp" alt="">
+      </div>
+      <div class="slide">
+        <img src="/assets/image 2.webp" alt="">
+      </div>
+      <div class="slide">
+        <img src="/assets/image 3.webp" alt="">
+      </div>
+      <div class="slide">
+        <img src="/assets/image 4.webp" alt="">
+      </div>
+
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="manual-navigation">
+    <label for="radio1" class="manual-btn"></label>
+    <label for="radio2" class="manual-btn"></label>
+    <label for="radio3" class="manual-btn"></label>
+    <label for="radio4" class="manual-btn"></label>
+  </div>
+  <div class="container">
+    <div class="header">
+      <h1>Create Account</h1>
+    </div>
+    <form class="form" id="form">
+      <div class="form-control">
+        <label for="username">Nome</label>
+        <input type="text" name="" id="username">
+        <i class="ph-check"></i>
+        <i class="ph-barricade"></i>
+        <small>Error message</small>
+      </div>
+      <div class="form-control">
+        <label for="useremail">Email</label>
+        <input type="email" name="" id="useremail">
+        <i class="ph-check"></i>
+        <i class="ph-barricade"></i>
+        <small>Error message</small>
+      </div>
+      <div class="form-control">
+        <label for="userpassword">Senha</label>
+        <input type="password" name="" id="userpassword">
+        <i class="ph-check"></i>
+        <i class="ph-barricade"></i>
+        <small>Error message</small>
+      </div>
+      <div class="form-control">
+        <label for="checkpassword">Confirmar Senha</label>
+        <input type="password" name="" id="checkpassword">
+        <i class="ph-check"></i>
+        <i class="ph-barricade"></i>
+        <small>Error message</small>
+      </div>
+      <button type="submit" href="/homePage.html">Enviar</button>
+    </form>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>

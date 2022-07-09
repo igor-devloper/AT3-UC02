@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display&family=Baloo+Da+2:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #09090A;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    font-family: Poppins;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;  
+    border: 0;
+}
+
+.container {
+    background-color: #121214;
+    border-radius: 5px;
+    border: 2px solid #323238;
+    width: 391px;
+    height: 600px;
+    max-width: 100%;
+    overflow: hidden;
+    margin: auto
+}
+
+.header {
+    padding: 30px 40px;
+}
+
+.header h1 {
+    font-family: 'Baloo Da 2', serif;
+    font-weight: 600;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+
+}
+
+.form {
+    padding: 0 40px 30px;
+}
+
+.form-control {
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    color: #fff;
+}
+
+.form-control input {
+    border: 2px solid #323238;
+    border-radius: 5px;
+    outline: 0;
+    display: block;
+    font-size: 12px;
+    width: 100%;
+    padding: 14px;
+    background-color: #09090A;
+    font-family: Poppins;
+}
+
+.form-control.success input {
+    border: 3px solid green;
+}
+
+.form-control.error input {
+    border: 3px solid #DB5A5A;
+}
+
+.form-control.error i.ph-barricade {
+    visibility: visible;
+    color: #DB5A5A;
+    font-size: 19px;
+}
+
+.form-control.success i.ph-check {
+    visibility: visible;
+    color: green;
+    font-size: 19px;
+}
+
+.form-control.error small{
+    color: #DB5A5A;
+    visibility: visible;
+}
+
+.form-control i {
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.form-control small {
+    visibility: hidden;
+    position: absolute;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #DB5A5A
+}
+
+.form button {
+    background-color: #6C63FF;
+    border-radius: 5px;
+    color: #fff;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin-top: 35px
+}
+
+.form button:hover {
+    background-color: #584ff5;
+    transition: 0.3s;
+}
+
+.destaques {
+    margin: 0 auto;
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+}
+.slides {
+    width: 400%;
+    height: 400px;
+    display: flex
+}
+
+.slides input{
+    display: none
+}
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+.slide img {
+    width: 800px;
+}
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    margin-top: 20rem;
+    margin-left: 12rem
+}
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+    font-weight: 50
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #fff
+}
+
+#radio1:checked ~ .first{
+    margin-left:0
+}
+#radio2:checked ~ .first{
+    margin-left: -25%
+}
+#radio3:checked ~ .first{
+    margin-left: -50%
+}
+#radio4:checked ~ .first{
+    margin-left: -75%
+}   
+
+.navigation-auto div{
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s
+}
+
+.navigation-auto{
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #fff; 
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #fff
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #fff
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #fff
+}
